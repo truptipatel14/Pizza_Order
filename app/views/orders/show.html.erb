@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @order.Address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @order.City %>
+</p>
+
+<p>
+  <strong>Postalcode:</strong>
+  <%= @order.PostalCode %>
+</p>
+
+<p>
+  <strong>Phonenumber:</strong>
+  <%= @order.PhoneNumber %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @order.Size %>
+</p>
+
+<p>
+  <strong>Toppings:</strong>
+  <%= @order.Toppings %>
+</p>
+
+<p>
+  <strong>Crust:</strong>
+  <%= @order.Crust %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @order.Price %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

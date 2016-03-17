@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Address: 
+  City: 
+  PostalCode: 
+  PhoneNumber: 
+  Size: 
+  Toppings: 
+  Crust: 
+  Price: 1.5
+
+two:
+  Address: 
+  City: 
+  PostalCode: 
+  PhoneNumber: 
+  Size: 
+  Toppings: 
+  Crust: 
+  Price: 1.5
