@@ -13,3 +13,86 @@
  *= require_tree .
  *= require_self
  */
+#heading
+{
+    background-color: white;
+    opacity: 0.7;
+}
+
+#last
+{
+    width: 100%;
+    background-color: white;
+    opacity: 0.8;
+}
+
+h2
+{
+    text-align: center; 
+    font-family: cursive;
+    color: darkcyan;
+    
+}
+
+h1
+{
+    font-family: inherit;
+    font-style: italic;
+    color: crimson;
+    margin-left: 25%;
+}
+
+body
+{
+    /*background-image: url("backgroung.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*font-family: cursive;*/
+}
+
+#order_button
+{
+    margin-top: 2%;
+    margin-left: 87%;
+}
+
+#submitButton
+{
+    margin-left: 87%;
+}
+
+#gofororderbutton
+{
+    margin-left: 81%;
+}
+
+#icon
+{
+    float: left;
+    height: 15%;
+    width: 20%;
+}
+
+/*.radiobutton{
+    
+    width: 3%;
+    height: 3%;
+}*/
+
+h4
+{
+    font-family: cursive;
+}
+
+#address_div
+{
+    font-family: serif;
+    
+}
+
+#orderSummary_address_info
+{
+    font-size: 23px;
+    font-family: monospace;
+    color: crimson;
+}

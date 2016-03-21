@@ -10,40 +10,138 @@
       </ul>
     </div>
   <% end %>
+        <div  style="float : left; WIDTH:45%;">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                                <h3 class="panel-title">Pizza Size</h3>
+                        </div>
+                            <div class="panel-body">
+                                <p id="message"></p>
+                                
+                              <div class="form-group">
+                                      <%= f.label :Size %><br>
+                                      <%= f.radio_button("Size", "Small", :value => "Small") %>
+                                          <%= label_tag(:Small, "Small") %><br>
+                                      <%= f.radio_button("Size", "Medium", :value => "Medium") %>
+                                          <%= label_tag(:Medium, "Medium") %><br>
+                                      <%= f.radio_button("Size", "Large", :value => "Large") %>
+                                          <%= label_tag(:Small, "Large") %><br>
+                                      <%= f.radio_button("Size", "Extra Large", :value => "Extra Large") %>
+                                          <%= label_tag(:Medium, "Extra Large") %><br>
+                              </div>
+                            </div>   
+                    </div>
+                    
+                     <div class="panel panel-primary" style="float : left; WIDTH:45%;">
+                        <div class="panel-heading">
+                                <h3 class="panel-title">Non Veg Toppings</h3>
+                        </div>
+                            <div class="panel-body">
+                                <p id="message"></p>
+                                
+                              <div class="form-group">
+                                     <%= check_box_tag 'order[Toppings][]', 'Pepperoni', checked('Pepperoni'), id: 'Toppings_Pepperoni' %>
+                                     <%= label_tag 'Toppings_Pepperoni', 'Pepperoni' %><br>
+                                       
+                                     <%= check_box_tag 'order[Toppings][]', 'Bacon', checked('Bacon'), id: 'Toppings_Bacon' %>
+                                     <%= label_tag 'Toppings_Bacon', 'Bacon' %><br>
+                                      
+                                     <%= check_box_tag 'order[Toppings][]', 'Sausage', checked('Sausage'), id: 'Toppings_Sausage' %>
+                                     <%= label_tag 'Toppings_Sausage', 'Sausage' %> <br>   
+                                                                    
+                                     <%= check_box_tag 'order[Toppings][]', 'Chicken', checked('Chicken'), id: 'Toppings_Chicken' %>
+                                     <%= label_tag 'Toppings_Chicken', 'Chicken' %><br>
+                                                                    
+                                     <%= check_box_tag 'order[Toppings][]', 'Beef', checked('Beef'), id: 'Toppings_Beef' %>
+                                     <%= label_tag 'Toppings_Beef', 'Beef' %><br>    
+                              </div>
+                            </div>    
+                    </div>
+                       <div class="panel panel-primary" style="float : right; WIDTH:45%;">
+                        <div class="panel-heading">
+                                <h3 class="panel-title">Veg Toppings</h3>
+                        </div>
+                            <div class="panel-body">
+                                <p id="message"></p>
+                                
+                              <div class="form-group">
+                                     <%= check_box_tag 'order[Toppings][]', 'Hot_Banana_Peppers', checked('Hot_Banana_Peppers'), id: 'Toppings_Hot_Banana_Peppers' %>
+                                     <%= label_tag 'Toppings_Hot_Banana_Peppers', 'Hot Banana Peppers' %><br>
+                                       
+                                     <%= check_box_tag 'order[Toppings][]', 'BlackOlives', checked('BlackOlives'), id: 'Toppings_BlackOlives' %>
+                                     <%= label_tag 'Toppings_BlackOlives', 'Black Olives' %><br>
+                                      
+                                     <%= check_box_tag 'order[Toppings][]', 'GreenOlives', checked('GreenOlives'), id: 'Toppings_GreenOlives' %>
+                                     <%= label_tag 'Toppings_GreenOlives', 'Green Olives' %> <br>   
+                                                                    
+                                     <%= check_box_tag 'order[Toppings][]', 'GreenPepper', checked('GreenPepper'), id: 'Toppings_GreenPepper' %>
+                                     <%= label_tag 'Toppings_GreenPepper', 'Green Pepper' %><br>
+                                                                    
+                                     <%= check_box_tag 'order[Toppings][]', 'Mashroom', checked('Mashroom'), id: 'Toppings_Mashroom' %>
+                                     <%= label_tag 'Toppings_Mashroom', 'Mashroom' %><br> 
+                                     
+                                     <%= check_box_tag 'order[Toppings][]', 'Pineapple', checked('Pineapple'), id: 'Toppings_Pineapple' %>
+                                     <%= label_tag 'Toppings_Pineapple', 'Pineapple' %><br> 
+                                     
+                                     <%= check_box_tag 'order[Toppings][]', 'Onion', checked('Onion'), id: 'Toppings_Onion' %>
+                                     <%= label_tag 'Toppings_Onion', 'Onion' %><br> 
+                              </div>
+                            </div>  
+                    </div>
+                    
+              </div>
+                <div class="">
+                    <div class="panel panel-primary"  style="float : right; width:50%;">
+                        <div class="panel-heading">
+                                <h3 class="panel-title">Address Information</h3>
+                        </div>
+                            <div class="panel-body">
+                                <p id="message"></p>
+                                
+                                <div class="form-group">
+                                    <%= f.label :Address %><br>
+                                    <%= f.text_field :Address %>
+                                </div>
+                                <div class="form-group">
+                                     <%= f.label :City %><br>
+                                     <%= f.text_field :City %>
+                                </div>
+                                
+                                <div class="form-group">
+                                     <%= f.label :PostalCode %><br>
+                                     <%= f.text_field :PostalCode %>
+                                </div>
+                                <div class="form-group">
+                                     <%= f.label :PhoneNumber %><br>
+                                     <%= f.text_field :PhoneNumber %>
+                                </div>
+                                
+                                <div class="form-group">
+                                     <%= f.label :Province %><br>
+                                     <%= f.text_field :Province %>
+                                </div>
+                                
+                               
+                                <div class="form-group">
+                                     <%= f.label :Crust %><br>
+                                        <%= f.check_box( :Crust, {}, "Stuffed", "None") %>
+                                          <%= label_tag(:Crust, "Stuffed") %>
+                              
+                                </div>
+                                
+                              
+                            </div>
+                            <div>
+                                
+                                <%= link_to 'Back', orders_path, :class => 'btn btn-success' %>
+                                <div class="actions">
+                                    <%= f.submit %>
+                                  </div>
+                    </div>
+              </div>
+          </div>  
+     <% end %>
+     
+    
+    
 
-  <div class="field">
-    <%= f.label :Address %><br>
-    <%= f.text_field :Address %>
-  </div>
-  <div class="field">
-    <%= f.label :City %><br>
-    <%= f.text_field :City %>
-  </div>
-  <div class="field">
-    <%= f.label :PostalCode %><br>
-    <%= f.text_field :PostalCode %>
-  </div>
-  <div class="field">
-    <%= f.label :PhoneNumber %><br>
-    <%= f.text_field :PhoneNumber %>
-  </div>
-  <div class="field">
-    <%= f.label :Size %><br>
-    <%= f.text_field :Size %>
-  </div>
-  <div class="field">
-    <%= f.label :Toppings %><br>
-    <%= f.text_field :Toppings %>
-  </div>
-  <div class="field">
-    <%= f.label :Crust %><br>
-    <%= f.text_field :Crust %>
-  </div>
-  <div class="field">
-    <%= f.label :Price %><br>
-    <%= f.text_field :Price %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>

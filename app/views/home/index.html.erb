@@ -1,0 +1,27 @@
+<!DOCKTYPE HTML>
+<html>
+    <head>
+        <title>
+            Conestoga Pizzeria
+        </title>
+        
+      
+      
+    </head>
+    
+    <body>
+        <div class="container">
+                      <div id="last"  class="container">
+                <div>
+                    <% if user_signed_in? %>
+                        <%= link_to "Logout", destroy_user_session_path, :class => 'btn btn-danger', :method => :delete %>
+                    <% end %>
+                    <% if !user_signed_in? %>
+                        <%= link_to "Login", new_user_session_path(@user), :class => 'btn btn-success' %>
+                    <% end %>
+                </div>
+                <h2>Eat Fresh and Healthy food</h2>
+            </div>
+        </div>
+    </body>
+</html>
