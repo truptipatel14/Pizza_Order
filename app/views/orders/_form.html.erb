@@ -10,8 +10,9 @@
       </ul>
     </div>
   <% end %>
-        <div  style="float : left; WIDTH:45%;">
-                    <div class="panel panel-primary">
+        <div  style="float : left; WIDTH:48%;">
+          
+                    <div class="panel panel-primary"  style="float : left; width:48%; margin-right:10px;">
                         <div class="panel-heading">
                                 <h3 class="panel-title">Pizza Size</h3>
                         </div>
@@ -32,7 +33,28 @@
                             </div>   
                     </div>
                     
-                     <div class="panel panel-primary" style="float : left; WIDTH:45%;">
+                      <div class="panel panel-primary"  style="float : left; width:48%; height:223px; margin-bottom : 50px; margin-left: 10px;">
+                        <div class="panel-heading">
+                                <h3 class="panel-title">Pizza Crust</h3>
+                        </div>
+                            <div class="panel-body">
+                                <p id="message"></p>
+                                
+                              <div class="form-group">
+                                      <%= f.label :Crust %><br>
+                                      <%= f.radio_button("Crust", "Hand Tosted Crust", :value => "Hand_Tosted_Crust") %>
+                                          <%= label_tag(:Hand_Tosted_Crust, "Hand Tosted Crust") %><br>
+                                      <%= f.radio_button("Crust", "Crunchy Thin Crust", :value => "Crunchy_Thin_Crust") %>
+                                          <%= label_tag(:Crunchy_Thin_Crust, "Crunchy Thin Crust") %><br>
+                                      <%= f.radio_button("Crust", "Stuffed Crust", :value => "Stuffed_Crust") %>
+                                          <%= label_tag(:Stuffed_Crust, "Stuffed Crust") %>
+                                        
+                              </div>
+                            </div>   
+                    </div>
+              
+                
+                     <div class="panel panel-primary" style="WIDTH:48%; height:288px; float : left; ">
                         <div class="panel-heading">
                                 <h3 class="panel-title">Non Veg Toppings</h3>
                         </div>
@@ -57,7 +79,7 @@
                               </div>
                             </div>    
                     </div>
-                       <div class="panel panel-primary" style="float : right; WIDTH:45%;">
+                       <div class="panel panel-primary" style="float : right; WIDTH:48%;">
                         <div class="panel-heading">
                                 <h3 class="panel-title">Veg Toppings</h3>
                         </div>
@@ -89,9 +111,12 @@
                             </div>  
                     </div>
                     
-              </div>
-                <div class="">
-                    <div class="panel panel-primary"  style="float : right; width:50%;">
+                  
+       
+                 </div>   
+              
+              
+                    <div class="panel panel-primary"  style="float : right; width:48%; height:551px;">
                         <div class="panel-heading">
                                 <h3 class="panel-title">Address Information</h3>
                         </div>
@@ -120,26 +145,16 @@
                                      <%= f.label :Province %><br>
                                      <%= f.text_field :Province %>
                                 </div>
-                                
-                               
-                                <div class="form-group">
-                                     <%= f.label :Crust %><br>
-                                        <%= f.check_box( :Crust, {}, "Stuffed", "None") %>
-                                          <%= label_tag(:Crust, "Stuffed") %>
+                              </div>
                               
+                        <div> 
+                                <%= link_to 'Back', orders_path, :class => 'btn btn-danger' , :style => "margin-top:90px; margin-left:10px; float : left;" %>
+                                <div class="actions" style="margin-top:90px; margin-right:10px;  float : right;" >
+                                    <%= f.submit :class => 'btn btn-danger' %>
                                 </div>
-                                
-                              
-                            </div>
-                            <div>
-                                
-                                <%= link_to 'Back', orders_path, :class => 'btn btn-success' %>
-                                <div class="actions">
-                                    <%= f.submit %>
-                                  </div>
-                    </div>
+                        </div>
               </div>
-          </div>  
+         
      <% end %>
      
     
