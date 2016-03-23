@@ -15,8 +15,8 @@
  */
 #heading
 {
-    background-color: white;
-    opacity: 0.7;
+    background-color: #BCC6CC;
+    opacity: 0.4;
 }
 
 #last
@@ -95,4 +95,18 @@ h4
     font-size: 23px;
     font-family: monospace;
     color: crimson;
+}
+
+
+#size_div
+{
+    float : left; 
+    width:48%; 
+    margin-right:10px;
+}
+
+#vegtopping_div
+{
+    float : right; 
+    WIDTH:48%;
 }

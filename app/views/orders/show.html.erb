@@ -21,6 +21,10 @@
 </p>
 
 <p>
+  <strong>Province:</strong>
+  <%= @order.Province %>
+</p>
+<p>
   <strong>Size:</strong>
   <%= @order.Size %>
 </p>
@@ -37,7 +41,7 @@
 
 <p>
   <strong>Price:</strong>
-  <%= @order.Price %>
+  <%= number_to_currency(@order.Price) %>
 </p>
 
 <%= link_to 'Edit', edit_order_path(@order) %> |

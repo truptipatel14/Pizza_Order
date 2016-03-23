@@ -2,7 +2,7 @@
 
 <h1>Listing Orders</h1>
 
-<table>
+<table class = "table table-striped">
   <thead>
     <tr>
       <th>Address</th>
@@ -29,10 +29,10 @@
         <td><%= order.Size %></td>
         <td><%= order.Toppings %></td>
         <td><%= order.Crust %></td>
-        <td><%= order.Price %></td>
-        <td><%= link_to 'Show', order %></td>
-        <td><%= link_to 'Edit', edit_order_path(order) %></td>
-        <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= number_to_currency(order.Price) %></td>
+        <td><%= link_to 'Show', order , :class => 'btn btn-primary'%></td>
+        <td><%= link_to 'Edit', edit_order_path(order), :class => 'btn btn-success' %></td>
+        <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-danger' %></td>
       </tr>
     <% end %>
   </tbody>
