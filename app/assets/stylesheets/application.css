@@ -15,7 +15,7 @@
  */
 #heading
 {
-    background-color: #4C787E;
+    background-color: black;
     opacity: 0.8;
     color: white;
 }
@@ -190,3 +190,13 @@ h4
     margin-top: 10%;
 }
 
+
+#Order_recipt
+{
+    width:50%;
+}
+
+#Order_recipt_pannel
+{
+    height:450px
+}
