@@ -170,6 +170,23 @@ h4
     
 }
 
+#buttons
+{
+    float:right;
+    margin-right: 200px;
+}
+
+#login_hide
+{
+    margin-left: 850px;
+}
+
+#edit_user
+{
+    width: 50%;
+    
+}
+
 #sign_up_div
 {
     width: 50%;
@@ -198,5 +215,12 @@ h4
 
 #Order_recipt_pannel
 {
-    height:450px
+    height:450px;
+
+}
+
+#User_info_pannel
+{
+    height: 350;
+    width: 50%;
 }

@@ -2,5 +2,7 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @user %> |
-<%= link_to 'Back', users_path %>
+<div class="container">
+    <%= link_to 'Show', @user, :class => 'btn btn-warning' %> 
+    <%= link_to 'Back', users_path , :class => 'btn btn-success'%>
+</div>
