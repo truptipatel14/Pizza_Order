@@ -72,3 +72,4 @@ class OrdersController < ApplicationController
       params.require(:order).permit(:Address, :City, :PostalCode, :PhoneNumber, :Province, :Size, {:Toppings => []}, :Crust, :Price)
     end
 end
+ 

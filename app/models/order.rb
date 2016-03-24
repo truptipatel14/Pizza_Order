@@ -12,6 +12,10 @@ class Order < ActiveRecord::Base
       
       validates :Address, presence:true
       
+      validates :Size, presence:true
+      
+      validates :Crust, presence:true
+      
         
     def Price
         @TotalPrice = 0;
@@ -21,17 +25,17 @@ class Order < ActiveRecord::Base
         @tax = 0;
         
         if self.Size == "Small"
-          @Size=5.00
+          @Size = 5.00
         elsif self.Size == "Medium"
-          @Size=10.00
+          @Size = 10.00
         elsif self.Size == "Large"
-          @Size=15.00
+          @Size = 15.00
         elsif self.Size == "Extra Large"
-          @Size=20.00
+          @Size = 20.00
         end
         
        if attribute_present?("Toppings")
-         @ToppingPrice = self.Toppings.count(',') * 0.5
+          @ToppingPrice = self.Toppings.count(',') * 0.5
        end
         
         if self.Crust == "Stuffed Crust"
@@ -47,12 +51,11 @@ class Order < ActiveRecord::Base
         elsif self.Province == "Quebec"
            @tax = 0.11
         end
-        @TotalPrice = @Size + @CrustPrice +  @ToppingPrice;
+        
+        @TotalPrice = @Size + @CrustPrice + @ToppingPrice;
               
         return ( (@tax * @TotalPrice) + @TotalPrice)
         
-        
     end
-       
 end
  

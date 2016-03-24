@@ -10,7 +10,7 @@
       </ul>
     </div>
   <% end %>
-        <div  style="float : left; WIDTH:48%;">
+        <div id = "pizza_div">
           
                     <div class="panel panel-primary" id="size_div">
                         <div class="panel-heading">
@@ -33,7 +33,7 @@
                             </div>   
                     </div>
                     
-                      <div class="panel panel-primary" id="crust_div"  style="float : left; width:48%; height:223px; margin-bottom : 50px; margin-left: 10px;">
+                      <div class="panel panel-primary" id="crust_div">
                         <div class="panel-heading">
                                 <h3 class="panel-title">Pizza Crust</h3>
                         </div>
@@ -54,7 +54,7 @@
                     </div>
               
                 
-                     <div class="panel panel-primary" id="toppings_div" style="WIDTH:48%; height:288px; float : left; ">
+                     <div class="panel panel-primary" id="nonveg_toppings_div">
                         <div class="panel-heading">
                                 <h3 class="panel-title">Non Veg Toppings</h3>
                         </div>
@@ -110,13 +110,10 @@
                               </div>
                             </div>  
                     </div>
-                    
-                  
        
                  </div>   
               
-              
-                    <div class="panel panel-primary"  style="float : right; width:48%; height:551px;">
+                    <div class="panel panel-primary" id="Address_div">
                         <div class="panel-heading">
                                 <h3 class="panel-title">Address Information</h3>
                         </div>
@@ -148,8 +145,8 @@
                               </div>
                               
                         <div> 
-                                <%= link_to 'Back', orders_path, :class => 'btn btn-danger' , :style => "margin-top:90px; margin-left:10px; float : left;" %>
-                                <div class="actions" style="margin-top:90px; margin-right:10px;  float : right;" >
+                                <%= link_to 'Back', orders_path, :class => 'btn btn-warning' , :id => "back_button" %>
+                                <div class="actions" id = "create_order" >
                                     <%= f.submit :class => 'btn btn-danger' %>
                                 </div>
                         </div>

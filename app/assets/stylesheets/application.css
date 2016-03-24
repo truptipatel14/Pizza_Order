@@ -15,8 +15,9 @@
  */
 #heading
 {
-    background-color: #BCC6CC;
-    opacity: 0.4;
+    background-color: #4C787E;
+    opacity: 0.8;
+    color: white;
 }
 
 #last
@@ -25,14 +26,14 @@
     background-color: white;
     opacity: 0.8;
 }
-
+/*
 h2
 {
     text-align: center; 
     font-family: cursive;
     color: darkcyan;
     
-}
+}*/
 
 h1
 {
@@ -73,22 +74,11 @@ body
     width: 20%;
 }
 
-/*.radiobutton{
-    
-    width: 3%;
-    height: 3%;
-}*/
-
 h4
 {
     font-family: cursive;
 }
 
-#address_div
-{
-    font-family: serif;
-    
-}
 
 #orderSummary_address_info
 {
@@ -97,6 +87,11 @@ h4
     color: crimson;
 }
 
+#pizza_div
+{
+    float : left; 
+    WIDTH:48%;
+}
 
 #size_div
 {
@@ -105,8 +100,93 @@ h4
     margin-right:10px;
 }
 
+#crust_div
+{
+    float : left; 
+    width:48%; 
+    height:223px; 
+    margin-bottom : 50px; 
+    margin-left: 10px;
+}
+
+#nonveg_toppings_div
+{
+    WIDTH:48%; 
+    height:288px; 
+    float : left; 
+}
+
 #vegtopping_div
 {
     float : right; 
     WIDTH:48%;
 }
+
+#Order_recipt_Button
+{
+     float:right; 
+     margin-right:10px;
+}
+
+#Address_div
+{
+     float : right; 
+     width:48%; 
+     height:551px;
+}
+
+#back_button
+{
+    margin-top:90px; 
+    margin-left:10px; 
+    float : left;
+}
+
+#create_order
+{
+    margin-top:90px; margin-right:10px;  float : right;
+}
+
+#new_order_id
+{
+    float: right;
+    margin-right: 10px;
+}
+
+#Login_LogOut_Div
+{
+    margin-top: 10%;
+    margin-right: 10px; 
+    float: right;
+}
+
+#home_heading
+{
+    margin-top: 50px;
+    font-family: cursive;
+    color: darkcyan;
+    text-align: center;
+    font-size: 45px;
+    
+}
+
+#sign_up_div
+{
+    width: 50%;
+}
+
+#sign_up
+{
+    text-align: center;
+    font-family: serif;
+    font-style: oblique;
+    color: blue;
+    margin-bottom: 20px;
+}
+
+#login_id
+{
+    margin-left: 30%;
+    margin-top: 10%;
+}
+

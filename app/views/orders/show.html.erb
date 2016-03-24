@@ -1,48 +1,52 @@
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Address:</strong>
-  <%= @order.Address %>
-</p>
-
-<p>
-  <strong>City:</strong>
-  <%= @order.City %>
-</p>
-
-<p>
-  <strong>Postalcode:</strong>
-  <%= @order.PostalCode %>
-</p>
-
-<p>
-  <strong>Phonenumber:</strong>
-  <%= @order.PhoneNumber %>
-</p>
-
-<p>
-  <strong>Province:</strong>
-  <%= @order.Province %>
-</p>
-<p>
-  <strong>Size:</strong>
-  <%= @order.Size %>
-</p>
-
-<p>
-  <strong>Toppings:</strong>
-  <%= @order.Toppings %>
-</p>
-
-<p>
-  <strong>Crust:</strong>
-  <%= @order.Crust %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= number_to_currency(@order.Price) %>
-</p>
-
-<%= link_to 'Edit', edit_order_path(@order) %> |
-<%= link_to 'Back', orders_path %>
+  <div class = "container" id="Order_recipt" style="width:50%;">
+ 
+         <div class="panel panel-primary" style="height:450px">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Your Order Information</h3>
+                </div>
+                <div class="panel-body">
+                    <p id="message"></p>
+                        <div class="form-group">
+                               <strong>Address:</strong>
+                               <%= @order.Address %>
+                        </div>
+                       <div class="form-group">
+                               <strong>City:</strong>
+                               <%= @order.City %>
+                        </div>
+                        <div class="form-group">
+                                <strong>Postalcode:</strong>
+                                <%= @order.PostalCode %>
+                        </div>
+                        <div class="form-group">
+                                <strong>Phonenumber:</strong>
+                                <%= @order.PhoneNumber %>
+                        </div>
+                        <div class="form-group">
+                              <strong>Province:</strong>
+                              <%= @order.Province %>
+                        </div>
+                        <div class="form-group">
+                             <strong>Size:</strong>
+                             <%= @order.Size %>
+                        </div>
+                        <div class="form-group">
+                              <strong>Toppings:</strong>
+                              <%= @order.Toppings %>
+                        </div>
+                        <div class="form-group">
+                              <strong>Crust:</strong>
+                              <%= @order.Crust %>
+                        </div>
+                        <div class="form-group">
+                             <strong>Price:</strong>
+                             <%= number_to_currency(@order.Price) %>
+                        </div>
+                </div>        
+     <div id="Order_recipt_Button">
+    <%= link_to 'Edit', edit_order_path(@order) ,:class => 'btn btn-success' %> 
+    <%= link_to 'Back', orders_path ,:class => 'btn btn-danger'%>
+    </div>
+    </div>
+</div>
